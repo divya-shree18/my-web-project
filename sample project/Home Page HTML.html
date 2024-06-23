@@ -1,0 +1,507 @@
+<DOCTYPE html>
+
+<html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==Title==================================-->
+    <title>
+
+        Chitkara Grocery Store
+
+    </title>
+
+    <!--==Stylesheet=============================-->
+    <link rel="stylesheet" type="text/css" href="Home Page CSS.css">
+
+    <!--==Fav-icon===============================-->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+
+    <!--==Using-Font-Awesome=====================-->
+    <script src="https://kit.fontawesome.com/5471644867.js" crossorigin="anonymous"></script>
+
+    <script src = 'Home Page JS.js' defer></script>
+	    
+   <link rel="shortcut icon" type="image/jpg" href="C:\Users\hp\Desktop\College\First Semester\Introduction To Web Technologies\Notepad ++ Files\Project\favicon.ico"/>
+
+    </head>
+
+    <body>
+
+        <!--==Navigation================================-->
+        <nav class="navigation">
+
+            <!--logo-------->
+            <a href="#" class="logo">
+
+                <span>C</span>GS
+
+            </a>
+
+            <!--menu-btn---->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+
+            <label for="menu-btn" class="menu-icon">
+
+                <span class="nav-icon"></span>
+
+            </label>
+
+            <!--menu-------->
+            <ul class="menu">
+
+                <li>
+                    <a href="Home Page HTML.html" class="active">
+                        
+                        Home
+
+                    </a>
+                
+                </li>
+
+                <li>
+
+                    <a href="#category">
+
+                        Categories
+                    
+                    </a>
+                
+                </li>
+
+                
+
+                <li>
+                    
+                    <a href="Contact Form HTML.html">
+                        
+                        Contact&nbsp;Us
+                    
+                    </a>
+                
+                </li>
+				
+					<a href="About Us HTML.html">
+
+						About&nbsp;us
+
+					</a>
+
+                </li>
+
+                <li>
+                    
+                    <a href="Login And Registration HTML.html">
+                            
+                        Sign&nbsp;up
+                        
+                    </a>
+                    
+                </li>
+
+                
+                <li>
+                    
+                    <a href="Login And Registration HTML.html">
+                        
+                        Login
+                    
+                    </a>
+                
+                </li>
+
+				</ul>
+
+            <!--right-nav-(cart-like)-->
+            <div class="right-nav">
+
+                <!--like----->
+                <a href="Wishlist HTML.html" class="like">
+
+                    <i class="fas fa-heart"></i>
+
+                    <span>
+                        
+                        2
+                    
+                    </span>
+
+                </a>
+
+                <!--cart----->
+                <a href="Shopping Cart HTML.html" class="cart">
+
+                    <i class="fas fa-shopping-cart"></i>
+
+                    <span>
+                        
+                        2
+                    
+                    </span>
+
+                </a>
+
+                <!--cart----->
+                <a href="Profile HTML.html" class="user-profile">
+
+                    <i class="fas fa-user"></i>
+
+                    <span>
+
+                        1
+
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!--nav-end--------------------->
+        <!--==Search-banner=======================================-->
+        <section id="search-banner">
+
+            <!--bg--------->
+            <img alt="bg" class="bg-1" src="https://i.imgur.com/h8pXo1s.png">
+
+            <img alt="bg" class="bg-1_rev" src="https://i.imgur.com/h8pXo1s.png">
+
+            <img alt="bg-2" class="bg-2" src="https://i.imgur.com/2smuQIz.png">
+
+            <!--text------->
+            <div class="search-banner-text">
+
+                <h1>
+                    
+                    Order Your daily Groceries
+                
+                </h1>
+
+                <strong>
+                    
+                    #Free Delivery
+                
+                </strong>
+
+                <!--search-box------>
+                <form action="" class="search-box">
+
+                    <!--icon------>
+                    <i class="fas fa-search"></i>
+
+                    <!--input----->
+                    <input type="text" class="search-input" placeholder="Search" name="search" size = "80px" required>
+
+                    <!--btn------->
+                    <input type="submit" class="search-btn" value="Search">
+
+                </form>
+
+                <br>
+
+            </div>
+
+        </section>
+
+        <!--search-banner-end--------------->
+
+        
+        <!--==category=========================================-->
+        <section id="category">
+
+            <!--heading---------------->
+            <div class="category-heading">
+
+                <h2>
+                    
+                    Category
+                
+                </h2>
+
+                <span>
+                    
+                    All
+                
+                </span>
+
+            </div>
+
+            <!--box-container---------->
+            <div class="category-container">
+
+                <!--box---------------->
+                <a class="category-box" href = 'Fruits Category Page HTML.html'>
+					<img alt="Fruits and Vegetables" src="https://i.imgur.com/lvk68rp.png">
+					<span>Fruits & <br> Vegetables</span>
+				</a>
+				<!--box---------------->
+                <a class="category-box" href = 'Medicine Category Page HTML.html'>
+                    <img alt="Medicines" src="data:image/jpeg;base64,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">
+                    <span>Medicine</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href="Baby Care Category Page HTML.html">
+                    <img alt="Baby Care Products" src="https://i.imgur.com/uvd01HH.png">
+                    <span>Baby Care</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Office Category Page HTML.html'>
+                    <img alt="Fish" src="https://i.imgur.com/N5a3WUT.png">
+                    <span>Stationary</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Beauty Category Page HTML.html'>
+                    <img alt="Beauty Products" src="https://i.imgur.com/Bm0yLex.png">
+                    <span>Beauty</span>
+                </a>
+                <!--box---------------->
+                <a class="category-box" href = 'Gardening Category Page HTML.html'>
+                    <img alt="Gardening Products" src="https://i.imgur.com/AjGulv5.png">
+                    <span>Gardening</span>
+                </a>
+            </div>
+            
+        </section>
+        <!--category-end----------------------------------->
+        <!--==Products====================================-->
+        <section id="popular-product">
+            <!--heading----------->
+            <div class="product-heading">
+                <h3>Popular Product</h3>
+                <span>All</span>
+            </div>
+            <!--box-container------>
+            <div class="product-container">
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/vUJ2JKU.png">
+                    <strong>Apple</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 100</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="chili" src="https://i.imgur.com/rFhSMZN.png">
+                    <strong>Chili</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 80</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/sGLggWL.jpg">
+                    <strong>Onion</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 50</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/WFjH6ui.png">
+                    <strong>Potato</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 60</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/XVLuy2J.png">
+                    <strong>Garlic</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 50</span>
+                    <!--cart-btn------->
+                    <a href="#" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <!--box---------->
+                <div class="product-box">
+                    <img alt="apple" src="https://i.imgur.com/8l5hDhS.png">
+                    <strong>Tomato</strong>
+                    <span class="quantity">1 KG</span>
+                    <span class="price">Rs. 80</span>
+                    <!--cart-btn------->
+                    <a href="Shopping Cart HTML.html" class="cart-btn">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </a>
+                    <!--like-btn------->
+                    <a class="like-btn">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--popular-product-end--------------------->
+        <!--Popular-bundle-pack===================================-->
+        
+        <!--popular-bundle-pack-end-------------------------------->
+        <!--==Clients===============================================-->
+        <section id="clients">
+            <!--heading---------------->
+            <div class="client-heading">
+                <h3>What Our Clients Say</h3>
+            </div>
+            <!--box-container---------->
+            <div class="client-box-container">
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/FNVH9z6.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>James Mcavoy</strong>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>Chitkara Grocery Store is the best. CGS never fails to dissapoint me. Grocery shopping has become so easy with Chitkara Grocery Store.</Str></p>
+                </div>
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/3yv9Hkj.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>Sameer Sharma</strong>
+                            <span>Software Developer</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>Chitkara Grocery Store is just amazing. I can buy all my groceries from a single place. The groceries are available at very affordable prices. And, the groceries are delivered at the time slot you choose and prefer.</p>
+                </div>
+                <!--box------------->
+                <div class="client-box">
+                    <!--==profile===-->
+                    <div class="client-profile">
+                        <!--img--->
+                        <img alt="client" src="https://i.imgur.com/Rk5RDey.jpg">
+                        <!--text-->
+                        <div class="profile-text">
+                            <strong>Ava Alex</strong>
+                            <span>Marketer</span>
+                        </div>
+                    </div>
+                    <!--==Rating======-->
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <!--==comments===-->
+                    <p>At Chitkara Grocery Store, you can get fresh fruits and vegetables. And it is not only about fruits or vegetables, you can buy all kinds of stuff here.</p>
+                </div>
+            </div>
+        </section>
+        <!--client-section-end---------->
+        <!--==Partnre-logo================================-->
+       
+        <!--logo-section-end--------------------->
+       
+        <!--==Footer=============================================-->
+        <footer>
+            <div class="footer-container">
+                <!--logo-container------>
+                <div class="footer-logo">
+                    <a href="file:///C:/Users/RAGHAV/Desktop/Coding/Grocery/Logo.png"><span>C</span>GS</a>
+                    <!--social----->
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=en-in"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!--links------------------------->
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">Grocery</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">New</a></li>
+                </ul>
+            </div>
+            <!--links------------------------->
+            <div class="footer-links">
+                <strong>Category</strong>
+                <ul>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Vegetables</a></li>
+                    <li><a href="#">Baby</a></li>
+                    <li><a href="#">Medicine</a></li>
+                </ul>
+            </div>
+            <!--links-------------------------->
+            <div class="footer-links">
+                <strong>Contact</strong>
+                <ul>
+                    <li><a href="#">Phone : +123456789</a></li>
+                    <li><a href="#">Email : chitkaragrocery@gmail.com</a></li>
+                    <li><a href="#">Cities we serve</a></li>
+                </ul>
+				<br><p style="color: aliceblue;">Copyright ©2022 | All Rights Reserved</p>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
